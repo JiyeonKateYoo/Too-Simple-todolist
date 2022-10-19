@@ -7,11 +7,13 @@
 </template>
 
 <script>
-export default {
-  props: {
-    todos: []
-  }    
-}
+// export default {
+//   props: {
+//     todos: []
+//   }    
+// }
+
+export default { computed: { todos() { return this.$store.state.todos } } }
 </script>
 
 <style></style>
